@@ -2,7 +2,7 @@
 body {
     padding: 10px 10px;
     font-family: 'Antic Slab', serif; 
-    background-color: #85FFBD;
+    background-color: #85fbff;
     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 
@@ -51,11 +51,11 @@ th, td {
 
 /* EVEN  */
 .academic .table tr:nth-child(2n){
-    background-color: blue!important;
+    background-color: rgb(196, 145, 238)!important;
 }
 /* ODD  */
 .academic .table tr:nth-child(2n+1){
-    background-color: red!important;
+    background-color: rgb(245, 165, 165)!important;
 }
 
 .academic th {
@@ -65,7 +65,7 @@ th, td {
      background-color: aqua;
  }
  .ref td {
-     background-color: lightpink;
+     background-color: rgb(238, 187, 93) ;
  }
  
  /* photo design */
@@ -73,16 +73,12 @@ th, td {
     float: right;
     width: 150px;
     height: 180px;
-    /* box-shadow: 3px 3px 10px 4px grey; */
-    /* transition: box-shadow 2s, width 2s, height 2s;
-    transition-timing-function: ease;
-    transition-delay: 100ms; */
     box-shadow: 0px 5px 20px 5px #80808075;
     transition: all .3s ease;
     margin-top: 40px;
  }
 .pic img:hover{
-    /* box-shadow: 3px 3px 10px 10px grey; */
+
     box-shadow: 0px 5px 25px 5px #808080a1;
     transform: translateY(-20px);
 }
@@ -126,7 +122,7 @@ ol, ul {
 .title-block {
     position: absolute;
     top: 100px;
-    left: 100px;
+    left: 650px;
     background-color: rgba(51, 54, 53, .1);
     color: white;
     padding-left: 20px;
@@ -136,13 +132,18 @@ ol, ul {
 .section-block {
     position: absolute;
     top: 350px;
-    right: 250px;
+    right: 770px;
     background-color: rgba(51, 54, 53, .1);
-    color: white;
+    color: rgb(255, 255, 255);
     padding-left: 20px;
     padding-right: 30px;
     font-size: 30px;
 }
+
+.sec {
+    text-align: center;
+}
+
 .section-block li a {
     color: white;
     transition: font-size 1s;
