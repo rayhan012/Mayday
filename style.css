@@ -35,11 +35,18 @@ th, td {
     width: 20%;
     border-collapse: collapse;
 }
-.academic th:nth-child(odd) {
-     background-color: aqua;
+.row1 {
+    background-color: lightsalmon;
 }
-.academic th:nth-child(even) {
+.row2 {
     background-color: lightpink;
+}
+.row3 {
+    background-color: lightskyblue;
+}
+
+.academic th {
+     background-color: aqua;
 }
  .ref th {
      background-color: aqua;
@@ -63,6 +70,4 @@ th, td {
     width: 170px;
     height: 200px;
  }
- .xx {
-     color: black;
- }
+ 
