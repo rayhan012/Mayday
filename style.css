@@ -30,19 +30,32 @@ th, td {
     padding: 15px;
     text-align: center;
 }
+
 .ref {
     border: 2px solid black;
     width: 20%;
     border-collapse: collapse;
 }
-.row1 {
+
+/* .row1 {
     background-color: lightsalmon;
 }
+
 .row2 {
     background-color: lightpink;
 }
+
 .row3 {
     background-color: lightskyblue;
+} */
+
+/* EVEN  */
+.academic .table tr:nth-child(2n){
+    background-color: blue!important;
+}
+/* ODD  */
+.academic .table tr:nth-child(2n+1){
+    background-color: red!important;
 }
 
 .academic th {
@@ -56,20 +69,23 @@ th, td {
  }
  
  /* photo design */
- .pic img {
-     float: right;
-     width: 150px;
-     height: 180px;
-     box-shadow: 3px 3px 10px 4px grey;
-     transition: box-shadow 2s, width 2s, height 2s;
-     transition-timing-function: ease;
-     transition-delay: 100ms;
+.pic img {
+    float: right;
+    width: 150px;
+    height: 180px;
+    /* box-shadow: 3px 3px 10px 4px grey; */
+    /* transition: box-shadow 2s, width 2s, height 2s;
+    transition-timing-function: ease;
+    transition-delay: 100ms; */
+    box-shadow: 0px 5px 20px 5px #80808075;
+    transition: all .3s ease;
+    margin-top: 40px;
  }
- .pic img:hover {
-    box-shadow: 3px 3px 10px 10px grey;
-    width: 170px;
-    height: 200px;
- }
+.pic img:hover{
+    /* box-shadow: 3px 3px 10px 10px grey; */
+    box-shadow: 0px 5px 25px 5px #808080a1;
+    transform: translateY(-20px);
+}
  
 /* addding font awesome icon as list style */
 ol, ul {
@@ -93,8 +109,10 @@ ol, ul {
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
+    margin-right: 10px;
     -webkit-font-smoothing: antialiased;
  }
+
 /* Title block design */
  .hero {
     margin-top: -50px;
@@ -135,6 +153,8 @@ ol, ul {
 .section-block li {
     padding: 2px;
 }
+
+
 /* Animating title & Section block  */
 .title-block {
     animation: transitionT 3s ease;
